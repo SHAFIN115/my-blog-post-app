@@ -1,5 +1,7 @@
 import React from "react";
 import { useAuth } from "react-oidc-context";
+import  Login  from "./Login/login.js";
+import config from "./config.js";
 
 function App() {
   const auth = useAuth();
@@ -36,6 +38,8 @@ function App() {
 
   return (
     <div>
+      <h1>{config.title_login}</h1>
+      <Login/>
       <button onClick={() => auth.signinRedirect()}>Sign in</button>
       <button onClick={redirectToCognitoLogin}>Redirect to Cognito Login</button>
     </div>

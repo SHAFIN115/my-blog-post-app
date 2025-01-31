@@ -1,0 +1,22 @@
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 838px;
+    width: 1076px;
+    margin: auto;
+    background-color: bisque;
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      h1 {
+        font-size: #fff;
+        margin-top: 20px;
+        color: #5b5b5b;
+      }
+}
