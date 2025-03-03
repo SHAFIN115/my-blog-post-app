@@ -1,22 +1,65 @@
+/* Full-Screen Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
 
+/* Login Form */
+.login-box {
+  margin-top: 220px;
+  width: 320px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 838px;
-    width: 1076px;
-    margin: auto;
-    background-color: bisque;
-    img {
-        max-width: 100%;
-        height: auto;
-      }
-    
-      h1 {
-        font-size: #fff;
-        margin-top: 20px;
-        color: #5b5b5b;
-      }
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.login-button, .cognito-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover, .cognito-button:hover {
+  background-color: #0056b3;
+}
+
+/* Forgot Password */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
 }
